@@ -10,7 +10,6 @@ A premium, interactive, and high-performance online law firm web application cus
 SUEZY is an online-first legal chambers offering swift consultation booking, geolocation-aware advocate discovery, custom legal document drafts, case roadmap trackers, and Indian statutory reference searches.
 
 - **Creator:** N Sai Pracheet Reddy (Creator of SUEZY Web)
-- **HQ Office:** Level 2, Brigade Road, Bangalore, Karnataka - 560001
 - **Contact:** +91 95138 75783 | saipracheetreddy@gmail.com
 
 ---
@@ -19,7 +18,7 @@ SUEZY is an online-first legal chambers offering swift consultation booking, geo
 
 ### 1. 📍 Geolocation Advocate Directory
 * Real-time GPS distance calculation to sort empanelled advocates from closest to furthest.
-* Automatic fallback calculations relative to the SUEZY Bangalore headquarters if location access is restricted.
+* Automatic fallback calculations relative to default office coordinates if location access is restricted.
 * Instant dropdown filtering by practice areas (Criminal, Property, Corporate, Family, Civil) and cities.
 
 ### 2. 📝 Legal Document Generator

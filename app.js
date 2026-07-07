@@ -139,7 +139,7 @@ document.querySelectorAll('.nav-link').forEach(link => {
 
 // --- 3. ADVOCATE DIRECTORY & GEOLOCATION ---
 let userCoordinates = null;
-const SUEZY_HQ = { lat: 12.9738, lng: 77.6119 }; // Brigade Road, Bangalore
+const SUEZY_HQ = { lat: 12.9738, lng: 77.6119 };
 
 const lawyersList = [
   {
@@ -307,9 +307,9 @@ function renderLawyersDirectory(list, userCoords = null) {
       distance = getDistance(userCoords.lat, userCoords.lng, lawyer.lat, lawyer.lng);
       distanceLabel = `${distance.toFixed(1)} km away`;
     } else {
-      // Calculate relative to SUEZY Bangalore HQ
+      // Calculate relative to default coordinates
       distance = getDistance(SUEZY_HQ.lat, SUEZY_HQ.lng, lawyer.lat, lawyer.lng);
-      distanceLabel = `${distance.toFixed(1)} km from SUEZY HQ`;
+      distanceLabel = `${distance.toFixed(1)} km away`;
     }
     return { ...lawyer, distance, distanceLabel };
   });
@@ -413,9 +413,9 @@ function locateUserAndSortLawyers() {
     (error) => {
       console.warn('Geolocation error:', error);
       banner.style.display = 'block';
-      banner.innerHTML = `⚠️ Location access denied or unavailable. Showing distances relative to SUEZY Bangalore HQ.`;
+      banner.innerHTML = `⚠️ Location access denied or unavailable. Showing default distances.`;
       
-      // Fallback relative to HQ
+      // Fallback relative to default coordinates
       userCoordinates = null;
       filterLawyersDirectory();
       resetLocateBtn(false);
