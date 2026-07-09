@@ -9,7 +9,7 @@ A premium, interactive, and high-performance online law firm web application cus
 ## 🏛️ About SUEZY
 SUEZY is an online-first legal chambers offering swift consultation booking, geolocation-aware advocate discovery, custom legal document drafts, case roadmap trackers, and Indian statutory reference searches.
 
-- **Creator:** N Sai Pracheet Reddy (Creator of SUEZY Web)
+- **Creator:** N Sai Pracheet Reddy
 - **Contact:** +91 95138 75783 | saipracheetreddy@gmail.com
 
 ---
